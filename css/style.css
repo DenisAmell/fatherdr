@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.header{
+    width: 100%;
+    position: relative;
+    height: 900px;
+    background: url(../img/famely.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lenta{
+    max-width: 386px;
+    position: absolute;
+    top: -4px;
+    right: 438px;
+}
+.lenta2{
+    max-width: 212px;
+    position: absolute;
+    top: 5px;
+    right: 529px;
+}
+.happy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.cake{
+    max-width: 250px;
+    position: absolute;
+    bottom: -280px;
+}
+.main{
+    margin-top: 100px;
+}
+.container{
+    width: 1270px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+.title{
+    position: relative;
+}
+.text-title{
+    font-size: 44px;
+    line-height: 28px;
+    font-weight: bold;
+    margin-bottom: 70px;
+    font-family: 'Russo One', sans-serif;
+    position: relative;
+}
+.slider-title{
+    margin-bottom: 100px;
+}
+.complimet-people{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.people-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.people-wrapper{
+    padding: 50px;
+}
+.people-wrapper, .photo{
+    flex-basis: 50%;
+    height: 350px;
+}
+.hlopushpka{
+    max-width: 100px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+.hlopushpka1{
+    position: absolute;
+    max-width: 100px;
+    top: 0;
+    right: 40px;
+}
+.people1{
+    background: url(../img/photo2.jpg);
+    background-position: center top -94px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.people2{
+    background: url(../img/photo1.jpg);
+    background-position: center top -34px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.people3{
+    background: url(../img/photo3.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.people4{
+    background: url(../img/photo4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text{
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 30px;
+    font-family: 'Lobster', cursive;
+}
+.text-bottom{
+    font-size: 27px;
+    line-height: 34px;
+    text-align: right;
+    margin-top: 20px;
+    font-family: 'Marck Script', cursive;
+}
+.section{
+    margin-top: 100px;
+}
+.photo-slide{
+    width: 300px;
+    height: 350px;
+}
+.polosa{
+    width: 100%;
+    height: 177px;
+    background: url(../img/polosa.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer{
+    margin-top: 100px;
+    position: relative;
+}
+.fon{
+    position: absolute;
+    top: 45px;
+    left: 384px;
+}
+.photo-dad{
+    text-align: center;
+    margin-top: 105px;
+}
+.father{
+    max-width: 350px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.father-text{
+    font-size: 25px;
+    line-height: 21px;
+    font-family: 'Lobster', cursive;
+}
+.arrow{
+    display: inline-block;
+    width: 50px;
+    height: 80px;
+    background: url(../img/arrow.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px 0;
+}
+.video{
+    background: url(../img/fon4.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 1268px){
+    .polosa{
+        background-position: center;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 721px){
+    .polosa{
+        background-position: center;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
