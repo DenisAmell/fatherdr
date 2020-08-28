@@ -4,6 +4,9 @@
 body{
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 .famely{
     width: 100%;
     position: absolute;
@@ -76,7 +79,7 @@ body{
     top: 237px
 }
 .main{
-    margin-top: 100px;
+    margin-top: 200px;
 }
 .container{
     max-width: 1270px;
