@@ -4,29 +4,65 @@
 body{
     margin: 0;
 }
-.header{
+.famely{
     width: 100%;
-    position: relative;
-    height: 900px;
-    background: url(../img/famely.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+.header .icon{
+    max-width: 50px;
+    margin-left: 25px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+.navigations{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+}
+.navigation-item{
+    margin-right: 50px;
+    font-size: 25px;
+    line-height: 27px;
+    font-size: bold;
+    font-family: 'Russo One', sans-serif;
+}
+.navigation-link{
+    text-decoration: none;
+    color: #000;
+    text-shadow: -5px -5px 5px #ccc;
+}
+.navigation-link:hover{
+    text-decoration: underline #ccc;
+    text-shadow: -5px 5px 5px #ccc;
+}
+.header{
+    height: 961px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    position: relative;
 }
 .lenta{
     max-width: 386px;
     position: absolute;
-    top: -4px;
-    right: 438px;
+    top: 34px;
+    right: -37px;
 }
 .lenta2{
     max-width: 212px;
     position: absolute;
-    top: 5px;
-    right: 529px;
+    top: 50px;
+    right: -15px;
 }
 .happy{
     display: flex;
@@ -37,19 +73,20 @@ body{
 .cake{
     max-width: 250px;
     position: absolute;
-    bottom: -280px;
+    top: 237px
 }
 .main{
     margin-top: 100px;
 }
 .container{
-    width: 1270px;
+    max-width: 1270px;
     height: auto;
     text-align: center;
     margin: 0 auto;
 }
 .title{
     position: relative;
+    display: inline-block;
 }
 .text-title{
     font-size: 44px;
@@ -57,7 +94,6 @@ body{
     font-weight: bold;
     margin-bottom: 70px;
     font-family: 'Russo One', sans-serif;
-    position: relative;
 }
 .slider-title{
     margin-bottom: 100px;
@@ -135,6 +171,10 @@ body{
     width: 300px;
     height: 350px;
 }
+.photo-slide:hover{
+    height: 600px;
+    transform: translate(0px, -50px);
+}
 .polosa{
     width: 100%;
     height: 177px;
@@ -149,12 +189,18 @@ body{
 }
 .fon{
     position: absolute;
-    top: 45px;
-    left: 466px;
+    top: -78px;
+    left: -113px;
+    z-index: 1;
+}
+.title2{
+    display: block;
 }
 .photo-dad{
     text-align: center;
     margin-top: 105px;
+    position: relative;
+    display: inline-block;
 }
 .father{
     max-width: 350px;
@@ -181,19 +227,226 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    cursor: pointer;
 }
 
-@media (max-width: 1268px){
-    .polosa{
-        background-position: center;
-        max-width: 500px;
-        margin: 0 auto;
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 90%;
+    }
+    .header{
+        height: 728px;
+    }
+    .cake{
+        max-width: 150px;
+    }
+    .gif{
+        max-width: 750px;
+    }
+    .text{
+        font-size: 19px;
+        line-height: 21px;
+    }
+    .text-bottom {
+        font-size: 22px;
+        line-height: 25px;
     }
 }
-@media (max-width: 721px){
-    .polosa{
-        background-position: center;
-        max-width: 400px;
-        margin: 0 auto;
+@media (max-width: 910px){
+    .header{
+        height: 528px;
+    }
+    .cake{
+        max-width: 150px;
+        top: 185px
+    }
+    .complimet-people {
+        margin-top: 100px;
     }
 }
+@media (max-width: 780px){
+    .complimet-people {
+        margin-top: 50px;
+    }
+    .header{
+        height: 328px;
+    }
+    .people-item{
+        flex-wrap: wrap;
+    }
+    .people-wrapper{
+        padding: 0;
+        flex-basis: 100%;
+        order: 1;
+    }
+    .photo {
+        flex-basis: 100%;
+        order: 2;
+    }
+    .hlopushpka, .hlopushpka1 {
+        display: none;
+    }
+    .cake{
+        max-width: 85px;
+    }
+    .gif{
+        max-width: 550px;
+    }
+    .navigation-item {
+        font-size: 19px;
+    }
+    .fon {
+        position: absolute;
+        top: -78px;
+        left: -93px;
+        z-index: 1;
+        max-width: 550px;
+    }
+}
+@media (max-width: 555px){
+    .navigation-item {
+        font-size: 16px;
+    }
+    .header{
+        height: 228px;
+    }
+    .cake{
+        max-width: 85px;
+        top: 115px
+    }
+    .gif{
+        max-width: 480px;
+    }
+    .text-title {
+        font-size: 30px;
+    }
+    .lenta {
+        max-width: 249px;
+        right: -18px;
+    }
+    .lenta2 {
+        max-width: 148px;
+        position: absolute;
+        top: 42px;
+        right: -11px;
+    }
+    .father {
+        max-width: 267px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 500px){
+    .navigation-item {
+        font-size: 14px;
+    }
+    .header{
+        height: 350px;
+    }
+    .cake{
+        max-width: 85px;
+        top: 85px
+    }
+    .gif{
+        max-width: 380px;
+    }
+    .icon{
+        display: none;
+    }
+    .navigations{
+        margin: 20px auto;
+    }
+    .fon {
+        position: absolute;
+        top: -78px;
+        left: 0px;
+        z-index: 1;
+        max-width: 385px;
+    }
+    .father {
+        max-width: 267px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width: 438px){
+    .navigation-item {
+        font-size: 14px;
+        margin-right: 15px;
+    }
+    .header{
+        height: 267px;
+    }
+    .cake{
+        max-width: 65px;
+        top: 45px
+    }
+    .gif{
+        max-width: 262px;
+    }
+    .icon{
+        display: none;
+    }
+    .fon {
+        position: absolute;
+        top: -78px;
+        left: 0px;
+        z-index: 1;
+        max-width: 294px;
+    }
+    .father {
+        max-width: 167px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width: 320px){
+    .navigation-item {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .header{
+        height: 167px;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .text-title{
+        font-size: 21px;
+    }
+    .cake{
+        max-width: 65px;
+        top: 45px
+    }
+    .gif{
+        max-width: 262px;
+    }
+    .lenta {
+        max-width: 165px;
+        right: -7px;
+        top: 29px;
+    }
+    .lenta2 {
+        max-width: 106px;
+        position: absolute;
+        top: 30px;
+        right: -11px;
+    }
+    .fon {
+        position: absolute;
+        top: -78px;
+        left: 0px;
+        z-index: 1;
+        max-width: 294px;
+    }
+    .father {
+        max-width: 167px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+}
+
